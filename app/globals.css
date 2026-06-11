@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #FAFAF8;
+  --white: #FFFFFF;
+  --forest: #2C3E2D;
+  --sage: #B8D4B8;
+  --blush: #F2C4C4;
+  --peach: #F9EDE3;
+  --warm-grey: #d4cfc8;
+  --muted: #6b7c6b;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-forest: var(--forest);
+  --color-sage: var(--sage);
+  --color-blush: var(--blush);
+  --color-peach: var(--peach);
+  --color-warm-grey: var(--warm-grey);
+  --color-muted: var(--muted);
+  --font-display: var(--font-playfair);
+  --font-body: var(--font-dm-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--forest);
+  font-family: var(--font-dm-sans), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-stagger.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-stagger.visible > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger.visible > *:nth-child(2) { transition-delay: 100ms; }
+.reveal-stagger.visible > *:nth-child(3) { transition-delay: 200ms; }
+.reveal-stagger.visible > *:nth-child(4) { transition-delay: 300ms; }
+.reveal-stagger.visible > *:nth-child(5) { transition-delay: 400ms; }
+.reveal-stagger.visible > *:nth-child(6) { transition-delay: 500ms; }
+
+/* Phone reel scroll loop */
+.phone-reel-track {
+  animation: reel-scroll 12s linear infinite;
+}
+@keyframes reel-scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.overline {
+  font-family: var(--font-dm-sans), sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+}
