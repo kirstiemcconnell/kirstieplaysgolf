@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, ReactNode } from "react";
+import { useEffect, useRef, ReactNode, ElementType } from "react";
 
 export default function Reveal({
   children,
@@ -11,7 +11,7 @@ export default function Reveal({
   children: ReactNode;
   className?: string;
   stagger?: boolean;
-  as?: keyof JSX.IntrinsicElements;
+  as?: ElementType;
 }) {
   const ref = useRef<HTMLElement | null>(null);
 

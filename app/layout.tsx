@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+import { Poppins, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
+  weight: ["600", "700", "800"],
 });
 
 const dmSans = DM_Sans({
@@ -16,7 +15,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "@kirstieplaysgolf — Brand Partnerships",
+  title: "@kirstieplaysgolf | Brand Partnerships",
   description:
     "Golf creator. 1.2M monthly reach. Women's golf, humour, community. Partnership enquiries welcome.",
   robots: "noindex",
@@ -28,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
+    <html lang="en" className={`${poppins.variable} ${dmSans.variable}`}>
       <body className="bg-cream text-forest font-body antialiased">
         {children}
       </body>

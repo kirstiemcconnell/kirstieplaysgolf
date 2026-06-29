@@ -32,7 +32,7 @@ export default function Nav() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
         <a
           href="#"
-          className={`font-display text-lg md:text-xl transition-colors ${
+          className={`font-display text-base sm:text-lg md:text-xl transition-colors truncate mr-3 ${
             scrolled ? "text-forest" : "text-white"
           }`}
         >
@@ -59,7 +59,7 @@ export default function Nav() {
         </div>
         <a
           href="#contact"
-          className="md:hidden rounded-full bg-blush text-forest px-4 py-1.5 text-sm font-medium"
+          className="md:hidden rounded-full bg-blush text-forest px-4 py-1.5 text-sm font-medium whitespace-nowrap shrink-0"
         >
           Get in touch
         </a>

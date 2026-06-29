@@ -19,7 +19,7 @@
   --color-peach: var(--peach);
   --color-warm-grey: var(--warm-grey);
   --color-muted: var(--muted);
-  --font-display: var(--font-playfair);
+  --font-display: var(--font-poppins);
   --font-body: var(--font-dm-sans);
 }
 
@@ -34,7 +34,9 @@ body {
 }
 
 .font-display {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.03em;
 }
 
 /* Scroll reveal */
@@ -64,12 +66,20 @@ body {
 .reveal-stagger.visible > *:nth-child(6) { transition-delay: 500ms; }
 
 /* Phone reel scroll loop */
+/* Swipe down one photo at a time: dwell on each, then a quick flick to the
+   next. Track holds 7 slides (6 photos + a duplicate of the 1st), so one
+   slide = 100/7 ≈ 14.2857% and the loop point lands back on photo 1. */
 .phone-reel-track {
-  animation: reel-scroll 12s linear infinite;
+  animation: phone-swipe 15s infinite;
 }
-@keyframes reel-scroll {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-50%); }
+@keyframes phone-swipe {
+  0%,     13.5%  { transform: translateY(0%);          animation-timing-function: cubic-bezier(0.5, 0, 0.15, 1); }
+  16.67%, 30.17% { transform: translateY(-14.2857%);   animation-timing-function: cubic-bezier(0.5, 0, 0.15, 1); }
+  33.33%, 46.83% { transform: translateY(-28.5714%);   animation-timing-function: cubic-bezier(0.5, 0, 0.15, 1); }
+  50%,    63.5%  { transform: translateY(-42.8571%);   animation-timing-function: cubic-bezier(0.5, 0, 0.15, 1); }
+  66.67%, 80.17% { transform: translateY(-57.1429%);   animation-timing-function: cubic-bezier(0.5, 0, 0.15, 1); }
+  83.33%, 96.83% { transform: translateY(-71.4286%);   animation-timing-function: cubic-bezier(0.5, 0, 0.15, 1); }
+  100%           { transform: translateY(-85.7143%); }
 }
 
 .overline {
