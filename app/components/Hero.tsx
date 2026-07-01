@@ -9,7 +9,7 @@ const VIDEO_GREEN = "#092d03";
 export default function Hero() {
   return (
     <section
-      className="relative overflow-hidden md:min-h-svh md:flex md:flex-col"
+      className="relative overflow-hidden min-h-svh flex flex-col"
       style={{ backgroundColor: VIDEO_GREEN }}
     >
       {/* Looping background video, cards animate on the right */}
@@ -36,22 +36,22 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 max-w-7xl w-full mx-auto px-6 md:px-10 pt-28 md:pt-24 pb-16 md:pb-0 md:flex-1 flex items-center">
+      <div className="relative z-10 max-w-7xl w-full mx-auto px-6 md:px-10 pt-28 md:pt-24 pb-8 md:pb-0 flex-1 flex items-center">
         {/* Wordmark + tagline */}
-        <div className="text-white max-w-xl">
+        <div className="text-white max-w-[17rem] sm:max-w-sm md:max-w-xl">
           <h1 className="font-display whitespace-nowrap text-[clamp(1.6rem,4.2vw,3.6rem)] leading-tight">
             @kirstieplaysgolf
           </h1>
-          <p className="!text-sage mt-5 font-medium uppercase tracking-[0.07em] text-sm md:text-lg">
+          <p className="!text-sage mt-6 md:mt-5 font-medium uppercase tracking-[0.07em] text-sm md:text-lg">
             Women&apos;s Golf &amp; Lifestyle Creator
           </p>
-          <p className="mt-4 text-white/70 text-base md:text-lg max-w-md">
+          <p className="mt-6 md:mt-4 text-white/70 text-base md:text-lg max-w-md">
             Turning a beginner&apos;s journey into 1.2M monthly views, and a
             community that&apos;s growing with it.
           </p>
           <a
             href="#contact"
-            className="inline-block mt-10 px-7 py-3 rounded-full bg-blush text-forest font-semibold text-sm hover:opacity-90 transition-opacity"
+            className="inline-block mt-12 md:mt-10 px-7 py-3 rounded-full bg-blush text-forest font-semibold text-sm hover:opacity-90 transition-opacity"
           >
             Work with me
           </a>

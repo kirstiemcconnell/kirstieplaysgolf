@@ -24,22 +24,31 @@ type Partnership = {
   centerMedia?: boolean; // vertically center the media column against the text
 };
 
-// Small heading with a short rule underneath it.
+// Small heading with a short rule underneath it. "responsive" centers on
+// mobile and left-aligns on desktop.
 function GroupHeading({
   children,
   align = "center",
 }: {
   children: React.ReactNode;
-  align?: "center" | "left";
+  align?: "center" | "left" | "responsive";
 }) {
+  const wrap =
+    align === "center"
+      ? "text-center"
+      : align === "responsive"
+      ? "text-center md:text-left"
+      : "";
+  const line =
+    align === "center"
+      ? "mx-auto"
+      : align === "responsive"
+      ? "mx-auto md:mx-0"
+      : "";
   return (
-    <div className={align === "center" ? "text-center mb-3" : "mb-3"}>
+    <div className={`mb-3 ${wrap}`}>
       <p className="overline">{children}</p>
-      <span
-        className={`block w-8 h-px bg-warm-grey mt-1.5 ${
-          align === "center" ? "mx-auto" : ""
-        }`}
-      />
+      <span className={`block w-8 h-px bg-warm-grey mt-1.5 ${line}`} />
     </div>
   );
 }
@@ -231,8 +240,8 @@ export default function BrandPartnerships() {
                     </div>
                   )}
                   {p.dms && (
-                    <div className="mt-6">
-                      <GroupHeading align="left">{p.dms.heading}</GroupHeading>
+                    <div className="mt-10 md:mt-6 mb-6 md:mb-0">
+                      <GroupHeading align="responsive">{p.dms.heading}</GroupHeading>
                       {/* Two columns; the shorter column's last card grows so
                           both columns end at the same baseline. */}
                       <div className="flex items-stretch gap-3">
@@ -279,7 +288,7 @@ export default function BrandPartnerships() {
                   }`}
                 >
                   {p.quad ? (
-                    <div className="space-y-6">
+                    <div className="space-y-10 md:space-y-6">
                       {p.quad.map((group) => (
                         <div key={group.heading}>
                           <GroupHeading>{group.heading}</GroupHeading>
@@ -334,11 +343,11 @@ export default function BrandPartnerships() {
                     it drops back into the text column, below the copy. */}
                 {p.stories && (
                   <div
-                    className={`order-3 md:row-start-2 ${
+                    className={`order-3 pt-6 md:pt-0 md:row-start-2 ${
                       imageFirst ? "md:col-start-2" : "md:col-start-1"
                     }`}
                   >
-                    <GroupHeading align="left">
+                    <GroupHeading align="responsive">
                       {p.stories.heading}
                     </GroupHeading>
                     <div className="grid grid-cols-3 gap-5 md:gap-6">

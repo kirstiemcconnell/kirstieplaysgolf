@@ -92,7 +92,7 @@ export default function FeaturedContent() {
         <Reveal className="text-center max-w-xl mx-auto mb-16">
           <p className="overline mb-4">My Content</p>
           <h2 className="font-display text-2xl md:text-3xl">
-            The kind of content I make.
+What a typical post might look like
           </h2>
           <p className="text-sm text-muted mt-4">
             A recent selection that gives a real feel for my style, not just

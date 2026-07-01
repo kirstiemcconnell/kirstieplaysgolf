@@ -41,8 +41,8 @@ export default function Contact() {
             Let&apos;s work together
           </h2>
           <p className="text-[15px] text-forest/80 mb-12">
-            If you think your brand could find a home in my content,
-            I&apos;d love to hear from it.
+            I&apos;d love to create some genuine, authentic content for your
+            brand! Please get in touch to discuss collaboration options.
           </p>
         </Reveal>
 
@@ -99,21 +99,6 @@ export default function Contact() {
                   required
                   className="w-full rounded-lg border border-warm-grey/60 bg-cream px-4 py-2.5 text-sm focus:outline-none focus:border-forest"
                 />
-              </div>
-
-              <div>
-                <label className="overline block mb-2" htmlFor="budget">Budget range</label>
-                <select
-                  id="budget"
-                  name="budget"
-                  className="w-full rounded-lg border border-warm-grey/60 bg-cream px-4 py-2.5 text-sm focus:outline-none focus:border-forest"
-                >
-                  <option>Under $500</option>
-                  <option>$500–$1,500</option>
-                  <option>$1,500–$5,000</option>
-                  <option>$5,000+</option>
-                  <option>Let&apos;s discuss</option>
-                </select>
               </div>
 
               <div>
