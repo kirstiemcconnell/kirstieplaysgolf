@@ -89,4 +89,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.07em;
   color: var(--muted);
+  /* Cancel Tailwind's same-named `overline` utility (text-decoration: overline) */
+  text-decoration: none;
 }

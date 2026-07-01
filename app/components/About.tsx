@@ -43,6 +43,14 @@ export default function About() {
               </p>
             </div>
           </Reveal>
+          <Reveal>
+            <a
+              href="#contact"
+              className="inline-block mt-8 px-7 py-3 rounded-full bg-blush text-forest font-semibold text-sm hover:opacity-90 transition-opacity"
+            >
+              Let&apos;s work together
+            </a>
+          </Reveal>
         </div>
 
         {/* iPhone mockup, photos swipe down one at a time */}

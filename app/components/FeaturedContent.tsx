@@ -204,6 +204,17 @@ export default function FeaturedContent() {
             </figure>
           ))}
         </Reveal>
+
+        <Reveal className="text-center mt-12 md:mt-16">
+          <a
+            href="https://instagram.com/kirstieplaysgolf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-7 py-3 rounded-full bg-blush text-forest font-semibold text-sm hover:opacity-90 transition-opacity"
+          >
+            See more on my page
+          </a>
+        </Reveal>
       </div>
     </section>
   );

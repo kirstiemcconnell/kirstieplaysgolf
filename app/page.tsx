@@ -4,9 +4,7 @@ import About from "./components/About";
 import Stats from "./components/Stats";
 import FeaturedContent from "./components/FeaturedContent";
 import BrandPartnerships from "./components/BrandPartnerships";
-import IdealFit from "./components/IdealFit";
-import Pricing from "./components/Pricing";
-import InstagramFeed from "./components/InstagramFeed";
+import Demographics from "./components/Demographics";
 import Contact from "./components/Contact";
 
 export default function Home() {
@@ -19,9 +17,7 @@ export default function Home() {
         <About />
         <FeaturedContent />
         <BrandPartnerships />
-        <IdealFit />
-        <Pricing />
-        <InstagramFeed />
+        <Demographics />
         <Contact />
       </main>
       <footer className="py-8 text-center text-xs text-muted">
