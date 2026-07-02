@@ -2,21 +2,22 @@
 
 import Reveal from "./Reveal";
 import StatCounter from "./StatCounter";
+import statsData from "../../public/instagram-stats.json";
 
 const intFormat = (n: number) => n.toLocaleString("en-US");
 const millionFormat = (n: number) => `${(n / 1000000).toFixed(1)}M`;
 // Engagement rate is stored ×10 so the integer counter can animate a decimal.
 const pctFormat = (n: number) => `${(n / 10).toFixed(1)}%`;
 
-// All figures manually maintained. Update from Instagram Insights.
+// Followers auto-updated daily via Cowork scheduled task (Instagram API).
+// All other figures manually maintained. Update from Instagram Insights.
 // Engagement rate = interactions / reach = 102,908 / 653,094 = 15.8%
 const stats = [
   {
     label: "Followers",
-    value: 7231,
+    value: statsData.followers,
     format: intFormat,
     sub: "↑ +31.4% this month",
-    // NOTE: live-updatable via Instagram API, see InstagramStats component
   },
   {
     label: "30-day impressions",
