@@ -5,6 +5,7 @@ import StatCounter from "./StatCounter";
 import statsData from "../../public/instagram-stats.json";
 
 const intFormat = (n: number) => n.toLocaleString("en-US");
+const millionFormat = (n: number) => `${(n / 1000000).toFixed(1)}M`;
 const pctFormat = (n: number) => `${(n / 10).toFixed(1)}%`;
 
 const stats = [
@@ -15,14 +16,14 @@ const stats = [
     sub: `Updated ${statsData.updated_at}`,
   },
   {
-    label: "28-day reach",
-    value: statsData.reach_28d,
-    format: intFormat,
-    sub: "Unique accounts reached",
+    label: "30-day views",
+    value: statsData.views_30d,
+    format: millionFormat,
+    sub: "Times content was seen",
   },
   {
-    label: "28-day interactions",
-    value: statsData.interactions_28d,
+    label: "30-day interactions",
+    value: statsData.interactions_30d,
     format: intFormat,
     sub: "Likes, comments, shares, saves & reposts",
   },
