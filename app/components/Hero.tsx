@@ -46,7 +46,7 @@ export default function Hero() {
             Women&apos;s Golf &amp; Lifestyle Creator
           </p>
           <p className="mt-6 md:mt-4 text-white/70 text-base md:text-lg max-w-md">
-            Turning a beginner&apos;s journey into 1.2M monthly views, and a
+            Turning a beginner&apos;s journey into 1.6M monthly views, and a
             community that&apos;s growing with it.
           </p>
           <a
