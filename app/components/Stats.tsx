@@ -9,31 +9,31 @@ const millionFormat = (n: number) => `${(n / 1000000).toFixed(1)}M`;
 // Engagement rate is stored ×10 so the integer counter can animate a decimal.
 const pctFormat = (n: number) => `${(n / 10).toFixed(1)}%`;
 
-// Followers auto-updated daily via Cowork scheduled task (Instagram API).
+// Followers auto-updated daily via Cowork scheduled task (Instagram API) — task currently paused.
 // All other figures manually maintained. Update from Instagram Insights.
-// Engagement rate = interactions / reach = 102,908 / 653,094 = 15.8%
+// Engagement rate = interactions / reach = 46,000 / 1,600,000 = 2.9%
 const stats = [
   {
     label: "Followers",
-    value: statsData.followers,
+    value: 10000,
     format: intFormat,
-    sub: "↑ +31.4% this month",
+    sub: "↑ +15.6% this month",
   },
   {
     label: "30-day impressions",
-    value: 1300000,
+    value: 1600000,
     format: millionFormat,
-    sub: "180× following size",
+    sub: "160× following size",
   },
   {
     label: "30-day interactions",
-    value: 102908,
+    value: 46000,
     format: intFormat,
     sub: "Likes, comments, shares, saves & reposts",
   },
   {
     label: "Engagement rate",
-    value: 158,
+    value: 29,
     format: pctFormat,
     sub: "Interactions by reach",
   },
