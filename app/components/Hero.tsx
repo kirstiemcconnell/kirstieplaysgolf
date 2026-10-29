@@ -63,7 +63,7 @@ export default function Hero() {
         <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-[3px] border-white/80 overflow-hidden shrink-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/profile.jpg"
+            src="/profile2.jpg"
             alt="Kirstie on the golf course"
             className="w-full h-full object-cover"
           />
