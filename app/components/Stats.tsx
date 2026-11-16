@@ -2,20 +2,22 @@
 
 import Reveal from "./Reveal";
 import StatCounter from "./StatCounter";
-import statsData from "../../public/instagram-stats.json";
 
-const millionFormat = (n: number) => `${(n / 1000000).toFixed(1)}M`;
-const kFormat = (n: number) => `${(n / 1000).toFixed(1)}k`;
+// Drops a trailing ".0" so 12000 shows as "12k" and 10300 as "10.3k"
+const kFormat = (n: number) => `${parseFloat((n / 1000).toFixed(1))}k`;
 const kFormatWhole = (n: number) => `${(n / 1000).toFixed(0)}k`;
+const millionFormat = (n: number) => `${(n / 1000000).toFixed(1)}M`;
+// Engagement rate is stored ×100 so the integer counter can animate two decimals.
 const pctFormat2dp = (n: number) => `${(n / 100).toFixed(2)}%`;
 
-// Followers auto-updated daily via Cowork scheduled task (Instagram API) — task currently paused.
+// Followers auto-updated via Cowork scheduled task (Instagram API), currently paused.
 // All other figures manually maintained. Update from Instagram Insights.
-// Engagement rate = median likes / followers = ~2,045 / 10,300 = 20.45%
+// Impressions multiple = 1,600,000 / 12,000 = ~133×
+// Engagement rate = median likes / followers = ~2,106 / 12,000 = ~17.55%
 const stats = [
   {
     label: "Followers",
-    value: 10300,
+    value: 12000,
     format: kFormat,
     sub: "↑ +15.6% this month",
   },
@@ -23,7 +25,7 @@ const stats = [
     label: "30-day impressions",
     value: 1600000,
     format: millionFormat,
-    sub: "160× following size",
+    sub: "133× following size",
   },
   {
     label: "30-day interactions",
@@ -33,7 +35,7 @@ const stats = [
   },
   {
     label: "Engagement rate",
-    value: 2045,
+    value: 1755,
     format: pctFormat2dp,
     sub: "Median likes by followers",
   },
