@@ -2,7 +2,10 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Stats from "./components/Stats";
-import FeaturedContent from "./components/FeaturedContent";
+// FeaturedContent ("My Content") is hidden for now. To bring it back,
+// uncomment this import and <FeaturedContent /> below.
+// import FeaturedContent from "./components/FeaturedContent";
+import UGCAds from "./components/UGCAds";
 import BrandPartnerships from "./components/BrandPartnerships";
 import Demographics from "./components/Demographics";
 import Contact from "./components/Contact";
@@ -15,7 +18,8 @@ export default function Home() {
         <Hero />
         <Stats />
         <About />
-        <FeaturedContent />
+        {/* <FeaturedContent /> */}
+        <UGCAds />
         <BrandPartnerships />
         <Demographics />
         <Contact />

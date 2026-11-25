@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 
 const links = [
   { href: "#about", label: "About" },
-  { href: "#work", label: "My Content" },
+  // { href: "#work", label: "My Content" }, // hidden with FeaturedContent
+  { href: "#ugc", label: "UGC" },
   { href: "#brands", label: "Partnerships" },
   { href: "#audience", label: "Audience" },
 ];
