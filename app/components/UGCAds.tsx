@@ -13,7 +13,7 @@ type AdExample = {
 const ads: AdExample[] = [
   {
     heading: "Benchmark Golf",
-    caption: "Golf-at-home simulator ad, live on Benchmark Golf's Instagram",
+    caption: "Golf-at-home simulator ad, live on my Instagram",
     video: "/ugc/benchmark-golf.mp4",
     cover: "/ugc/benchmark-golf.jpg",
   },
