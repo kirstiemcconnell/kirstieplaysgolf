@@ -103,10 +103,16 @@ export default function Contact() {
 
               <div>
                 <label className="overline block mb-2" htmlFor="message">Message / campaign idea</label>
+                <p id="message-hint" className="text-xs text-muted mb-2">
+                  To help me reply with a quote, please include your budget,
+                  timeline and the deliverables you have in mind.
+                </p>
                 <textarea
                   id="message"
                   name="message"
-                  rows={4}
+                  rows={5}
+                  aria-describedby="message-hint"
+                  placeholder={"Budget:\nTimeline:\nDeliverables (e.g. 1 UGC ad, 2 reels, stories):"}
                   className="w-full rounded-lg border border-warm-grey/60 bg-cream px-4 py-2.5 text-sm focus:outline-none focus:border-forest"
                 />
               </div>

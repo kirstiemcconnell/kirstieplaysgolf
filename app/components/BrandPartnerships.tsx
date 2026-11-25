@@ -394,6 +394,7 @@ export default function BrandPartnerships() {
             Every partnership looks a little different. Get in touch to see
             how we can collaborate!
           </p>
+          <p className="text-sm text-muted mt-3">Rates available on request.</p>
           <a
             href="#contact"
             className="inline-block mt-8 px-7 py-3 rounded-full bg-blush text-forest font-semibold text-sm hover:opacity-90 transition-opacity"
