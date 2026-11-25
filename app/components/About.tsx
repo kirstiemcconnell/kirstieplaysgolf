@@ -45,8 +45,8 @@ export default function About() {
           </Reveal>
         </div>
 
-        {/* iPhone mockup, photos swipe down one at a time */}
-        <Reveal className="justify-self-center md:justify-self-end">
+        {/* iPhone mockup, photos swipe down one at a time. Desktop only. */}
+        <Reveal className="hidden md:block justify-self-end">
           <div className="relative w-[168px] md:w-[212px]">
             {/* Side buttons */}
             <div className="absolute -left-[2px] top-[78px] md:top-[98px] w-[2px] h-[22px] md:h-[28px] rounded-l bg-[#2a2a2c]" />

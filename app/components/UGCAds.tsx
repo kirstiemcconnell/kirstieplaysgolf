@@ -25,7 +25,7 @@ const ads: AdExample[] = [
 const offer = [
   {
     title: "Hooks that stop the scroll",
-    body: "The same openers and pacing behind close to a million views a month on my own account, built around your product.",
+    body: "The same openers and pacing behind a million views a month on my own account, built around your product.",
   },
   {
     title: "A real golfer's point of view",
@@ -36,8 +36,8 @@ const offer = [
     body: "Hauls, day-in-the-life and on-course videos, scripted to your brief or kept natural.",
   },
   {
-    title: "Ready to run",
-    body: "Vertical 9:16 video posted on my account, with the ad code shared so you can run it as a partnership ad.",
+    title: "High quality video and editing",
+    body: "Filmed in 4K at 60fps with pro audio and on-course filming gear, then edited by someone with a background in graphic design and marketing.",
   },
 ];
 
@@ -51,11 +51,9 @@ export default function UGCAds() {
             Golf ads that don&apos;t feel like ads
           </h2>
           <p className="text-[15px] leading-relaxed text-forest/80 mb-8">
-            I create short-form video ads for golf and lifestyle brands. I
-            post them on my account and share the ad code, so you can put
-            paid spend behind them. They look and sound like my content,
-            because they are: native to the feed, from a creator golfers
-            already trust.
+            I create short-form video ads for golf and lifestyle brands. They
+            look and sound like my content, because they are: native to the
+            feed, from a creator golfers already trust.
           </p>
           <ul className="space-y-5">
             {offer.map((item) => (

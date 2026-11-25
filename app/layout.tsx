@@ -17,12 +17,12 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "@kirstieplaysgolf | Brand Partnerships",
   description:
-    "Women's golf creator with 12.3k followers and nearly 1M monthly views. UGC ads and brand partnerships for golf and lifestyle brands.",
+    "Women's golf creator with 12.3k followers and 1M monthly views. UGC ads and brand partnerships for golf and lifestyle brands.",
   // Used by link previews in messages, email and social apps.
   openGraph: {
     title: "@kirstieplaysgolf | UGC & Brand Partnerships",
     description:
-      "Women's golf creator with 12.3k followers and nearly 1M monthly views. UGC ads and brand partnerships for golf and lifestyle brands.",
+      "Women's golf creator with 12.3k followers and 1M monthly views. UGC ads and brand partnerships for golf and lifestyle brands.",
     type: "website",
   },
   robots: "noindex",
