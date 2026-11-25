@@ -14,20 +14,20 @@ const ads: AdExample[] = [
   {
     heading: "Benchmark Golf",
     caption: "Ad creative posted on the brand's own Instagram",
-    // video: "/ugc/benchmark-golf.mp4",
-    // cover: "/ugc/benchmark-golf.jpg",
+    video: "/ugc/benchmark-golf.mp4",
+    cover: "/ugc/benchmark-golf.jpg",
   },
   {
-    heading: "Coming soon",
-    caption: "Ad creative made for an upcoming brand campaign",
-    // video: "/ugc/upcoming-ad.mp4",
-    // cover: "/ugc/upcoming-ad.jpg",
+    heading: "Soneven",
+    caption: "Spring/summer haul for an upcoming campaign",
+    video: "/ugc/soneven.mp4",
+    cover: "/ugc/soneven.jpg",
   },
 ];
 
 const offer = [
   "Vertical video built for paid social",
-  "Scripted or natural, filmed on the course",
+  "Scripted or natural, on the course or at home",
   "Delivered for the brand to post and run as ads",
 ];
 
@@ -42,8 +42,8 @@ export default function UGCAds() {
           </h2>
           <p className="text-sm text-muted mb-6">
             As well as partnerships on my own account, I create ad content
-            for golf brands to post and promote themselves. Real golf,
-            filmed the way I film everything else.
+            for golf brands to post and promote themselves, filmed in the
+            same style my audience already knows.
           </p>
           <ul className="space-y-2.5">
             {offer.map((item) => (
