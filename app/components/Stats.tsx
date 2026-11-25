@@ -12,8 +12,9 @@ const pctFormat2dp = (n: number) => `${(n / 100).toFixed(2)}%`;
 // Followers auto-updated via Cowork scheduled task (Instagram API), currently paused.
 // All other figures manually maintained. Update from Instagram Insights.
 // Views multiple = 966,807 / 12,344 = ~78×
-// Engagement rate = median likes / followers = ~2,106 / 12,344 = ~17.06%
-// (median likes not refreshed since the last update; replace 2,106 when it is)
+// Engagement rate = avg interactions per post / followers, last 30 days
+//   = (12,000 post + 8,200 reel interactions) / 17 posts = ~1,188 / 12,344 = ~9.63%
+//   Interactions = likes, comments, shares, saves and reposts. Stories excluded.
 const stats = [
   {
     label: "Followers",
@@ -35,9 +36,9 @@ const stats = [
   },
   {
     label: "Engagement rate",
-    value: 1706,
+    value: 963,
     format: pctFormat2dp,
-    sub: "Median likes by followers",
+    sub: "Avg. interactions per post ÷ followers",
   },
 ];
 
