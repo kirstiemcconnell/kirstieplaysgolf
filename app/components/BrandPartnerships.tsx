@@ -121,7 +121,7 @@ const partnerships: Partnership[] = [
       { video: "/partnerships/gray/vid2.mp4", cover: "/partnerships/gray/pic2.jpg" },
     ],
     stats: [
-      { value: "4", label: "Outfits sent" },
+      { value: "4", label: "Outfits featured" },
       { value: "4", label: "Days filmed" },
       { value: "29", label: "Videos posted to date" },
       { value: "515k+", label: "Total views" },
