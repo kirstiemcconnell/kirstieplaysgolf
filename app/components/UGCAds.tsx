@@ -8,7 +8,7 @@ type AdExample = {
   cover?: string; // cover image in /public/ugc (vertical 9:16)
 };
 
-// Ad content made for brands to run on their own channels. This section is
+// Ad content posted on Kirstie's account and run by brands as partnership ads. This section is
 // about the service, not performance, so no view counts are shown.
 const ads: AdExample[] = [
   {
@@ -40,7 +40,7 @@ const offer = [
   },
   {
     title: "Ready to run",
-    body: "Vertical 9:16 video, delivered for you to post organically or put paid spend behind.",
+    body: "Vertical 9:16 video posted on my account, with the ad code shared so you can run it as a partnership ad.",
   },
 ];
 
@@ -54,10 +54,11 @@ export default function UGCAds() {
             Golf ads that don&apos;t feel like ads
           </h2>
           <p className="text-[15px] leading-relaxed text-forest/80 mb-8">
-            I create short-form video for golf and lifestyle brands to run on
-            their own channels. It looks and sounds like my content, because
-            it is: native to the feed, made by a creator golfers already
-            trust.
+            I create short-form video ads for golf and lifestyle brands. I
+            post them on my account and share the ad code, so you can put
+            paid spend behind them. They look and sound like my content,
+            because they are: native to the feed, from a creator golfers
+            already trust.
           </p>
           <ul className="space-y-5">
             {offer.map((item) => (
