@@ -108,9 +108,7 @@ const partnerships: Partnership[] = [
   {
     brand: "Gray + Haast",
     category: "Golf apparel",
-    badge: "Gifting Partnership",
-    // Hidden: gifted collabs are no longer offered. Remove this line to show it again.
-    hidden: true,
+    badge: "Organic Integration",
     description:
       "No scripts, no dedicated posts. Just real gear, worn for a real golf day, across multiple clips.",
     deliverables: [],
