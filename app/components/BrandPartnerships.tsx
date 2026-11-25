@@ -22,6 +22,7 @@ type Partnership = {
   stories?: { heading: string; slots: { image?: string; video?: string }[] }; // story strip (image or muted autoplay video)
   dms?: { heading: string; slots: { image?: string }[] }; // message-screenshot strip
   centerMedia?: boolean; // vertically center the media column against the text
+  hidden?: boolean; // keep the case study in code but leave it off the page
 };
 
 // Small heading with a short rule underneath it. "responsive" centers on
@@ -108,6 +109,8 @@ const partnerships: Partnership[] = [
     brand: "Gray + Haast",
     category: "Golf apparel",
     badge: "Gifting Partnership",
+    // Hidden: gifted collabs are no longer offered. Remove this line to show it again.
+    hidden: true,
     description:
       "No scripts, no dedicated posts. Just real gear, worn for a real golf day, across multiple clips.",
     deliverables: [],
@@ -182,7 +185,7 @@ export default function BrandPartnerships() {
         <div className="border-t border-warm-grey/50" />
 
         <div>
-          {partnerships.map((p, i) => {
+          {partnerships.filter((p) => !p.hidden).map((p, i) => {
             const imageFirst = i % 2 === 1; // alternate sides on desktop
             return (
               <Reveal
