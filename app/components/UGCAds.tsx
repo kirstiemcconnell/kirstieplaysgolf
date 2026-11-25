@@ -3,7 +3,6 @@ import PhoneSlot from "./PhoneSlot";
 
 type AdExample = {
   heading: string; // small label above the phone
-  caption: string; // one line under the phone
   video?: string; // mp4 in /public/ugc
   cover?: string; // cover image in /public/ugc (vertical 9:16)
 };
@@ -13,13 +12,11 @@ type AdExample = {
 const ads: AdExample[] = [
   {
     heading: "Benchmark Golf",
-    caption: "Golf-at-home simulator ad, live on my Instagram",
     video: "/ugc/benchmark-golf.mp4",
     cover: "/ugc/benchmark-golf.jpg",
   },
   {
     heading: "Soneven",
-    caption: "Spring/summer haul, launching soon",
     video: "/ugc/soneven.mp4",
     cover: "/ugc/soneven.jpg",
   },
@@ -90,9 +87,6 @@ export default function UGCAds() {
                 cover={ad.cover}
                 className="w-full max-w-[220px]"
               />
-              <figcaption className="text-xs text-muted text-center mt-3">
-                {ad.caption}
-              </figcaption>
             </figure>
           ))}
         </Reveal>
