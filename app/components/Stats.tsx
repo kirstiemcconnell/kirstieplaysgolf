@@ -29,7 +29,7 @@ const stats = [
   },
   {
     label: "30-day interactions",
-    value: 47000,
+    value: 22200,
     format: kFormatWhole,
     sub: "Likes, comments, shares, saves & reposts",
   },

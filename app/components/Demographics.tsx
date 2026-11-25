@@ -35,29 +35,7 @@ const followers: Audience = {
     { label: "Australia", value: 33.4 },
     { label: "UK", value: 11 },
     { label: "Canada", value: 4.5 },
-    { label: "NZ", value: 2.6 },
-  ],
-};
-
-const reach: Audience = {
-  title: "30-day reach",
-  total: "484k",
-  totalLabel: "accounts reached",
-  gender: [
-    { label: "Women", value: 65, color: "var(--blush)" },
-    { label: "Men", value: 35, color: "var(--forest)" },
-  ],
-  age: [
-    { label: "18-24", value: 16.9 },
-    { label: "25-34", value: 32.3 },
-    { label: "35-44", value: 21.3 },
-    { label: "45-54", value: 12.2 },
-  ],
-  location: [
-    { label: "US", value: 54.2 },
-    { label: "Canada", value: 16.9 },
-    { label: "Australia", value: 9 },
-    { label: "UK", value: 7.4 },
+    { label: "NZ", value: 2.5 },
   ],
 };
 
@@ -122,7 +100,7 @@ function BarList({ items, active }: { items: Bar[]; active: boolean }) {
             />
           </div>
           <span className="w-11 shrink-0 text-right tabular-nums text-forest font-medium">
-            {it.value}%
+            {it.value.toFixed(1)}%
           </span>
         </div>
       ))}
@@ -211,14 +189,12 @@ export default function Demographics() {
             A closer look at who&apos;s watching
           </h2>
           <p className="text-sm text-muted">
-            The people who follow me, and the far larger audience my content
-            reaches every month.
+            The people who follow me, from Instagram Insights.
           </p>
         </Reveal>
 
-        <div ref={ref} className="grid md:grid-cols-2 gap-6 md:gap-8">
+        <div ref={ref} className="max-w-xl mx-auto">
           <AudienceColumn data={followers} active={active} />
-          <AudienceColumn data={reach} active={active} />
         </div>
       </div>
     </section>
