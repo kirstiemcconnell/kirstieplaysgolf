@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "@kirstieplaysgolf | Brand Partnerships",
   description:
-    "Golf creator. 1.2M monthly reach. Women's golf, humour, community. Partnership enquiries welcome.",
+    "Golf creator. 484k monthly reach. Women's golf, humour, community. Partnership enquiries welcome.",
   robots: "noindex",
 };
 

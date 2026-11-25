@@ -17,23 +17,23 @@ type Audience = {
 
 const followers: Audience = {
   title: "Followers",
-  total: "10k",
+  total: "12.3k",
   totalLabel: "total followers",
   gender: [
-    { label: "Women", value: 35, color: "var(--blush)" },
-    { label: "Men", value: 65, color: "var(--forest)" },
+    { label: "Women", value: 40.5, color: "var(--blush)" },
+    { label: "Men", value: 59.5, color: "var(--forest)" },
   ],
   age: [
-    { label: "13-24", value: 3.2 },
-    { label: "25-34", value: 24 },
-    { label: "35-44", value: 30.6 },
-    { label: "45-54", value: 21.4 },
-    { label: "55+", value: 20.8 },
+    { label: "13-24", value: 2.7 },
+    { label: "25-34", value: 20.7 },
+    { label: "35-44", value: 30.2 },
+    { label: "45-54", value: 23.1 },
+    { label: "55+", value: 23.3 },
   ],
   location: [
-    { label: "Australia", value: 40.8 },
-    { label: "US", value: 32.5 },
-    { label: "UK", value: 10.9 },
+    { label: "US", value: 37.9 },
+    { label: "Australia", value: 33.4 },
+    { label: "UK", value: 11 },
     { label: "Canada", value: 4.5 },
     { label: "NZ", value: 2.6 },
   ],
@@ -41,7 +41,7 @@ const followers: Audience = {
 
 const reach: Audience = {
   title: "30-day reach",
-  total: "1.6M",
+  total: "484k",
   totalLabel: "accounts reached",
   gender: [
     { label: "Women", value: 65, color: "var(--blush)" },
